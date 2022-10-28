@@ -1,0 +1,10 @@
+{
+    "Name": "Manuel",
+    "LastName": "Espinoza",
+    "Age": "20",
+    "Courses": ["COMP2140", "COM2160", "MATH1240"],
+    "BirthPlace": { "City": "Cajamarca",
+                    "Province": "Cajamarca",
+                    "Country": "Peru"
+                }
+}

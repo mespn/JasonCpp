@@ -53,6 +53,7 @@ namespace Jason{
                 */
                 int index = 0;
                 int sStringIndex = 0;
+                bool isString = false;
                 char character;
                 for (int i = 0; i < length; i++){
                     character = inputLine[i];
@@ -62,10 +63,15 @@ namespace Jason{
                         || character == '['
                         || character == ']')
                     {
+                        if (isString)
+                        {
+                            index++;
+                        }
                         tokens[index++][0] = character;
                     }
                     else{
                         tokens[index][sStringIndex++] = character;
+                        isString = true;
                     }
                 }
             }
